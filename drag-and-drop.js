@@ -11,5 +11,5 @@ function drop(event) {
   event.preventDefault();
   var drop = document.getElementById("word");
   var data = event.dataTransfer.getData("text");
-  drop.innerHTML += data;
+  drop.innerHTML += `${data} `;
 }
