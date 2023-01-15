@@ -23,12 +23,13 @@
 </head>
 
 <body>
-    <div id="word"></div>
+    <div id="word" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
     <div id="msg"></div>
-    <div id="drag1" class="card">This</div>
-    <div id="drag2" class="card">house</div>
-    <div id="drag3" class="card">is</div>
-    <div id="drag4" class="card">beautiful</div>
+    <div id="drag1" class="card" draggable="true" ondragstart="drag(event)">This</div>
+    <div id="drag2" class="card" draggable="true" ondragstart="drag(event)">house</div>
+    <div id="drag3" class="card" draggable="true" ondragstart="drag(event)">is</div>
+    <div id="drag4" class="card" draggable="true" ondragstart="drag(event)">beautiful</div>
+    <script src="./drag-and-drop.js"></script>
 </body>
 
 </html>
